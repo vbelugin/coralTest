@@ -54,6 +54,7 @@ def get_currency_by_country(country):
     fh.close()
     return currency
 
+
 def get_currency_by_code(currency_code):
     response = requests.get(
         'http://www.webservicex.net/country.asmx/GetCountryByCurrencyCode?CurrencyCode=%s' % currency_code)
@@ -75,6 +76,7 @@ def get_currency_by_code(currency_code):
             currency = result
     fh.close()
     return currency
+
 
 def get_currency_code_by_name(currency_name):
     response = requests.get(
