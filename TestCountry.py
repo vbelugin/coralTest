@@ -28,7 +28,6 @@ class TestCountry(unittest.TestCase):
         code = 'qar'
         currency_name = GetCountry.get_currency_by_code(code)
         currency_code = GetCountry.get_currency_code_by_name(currency_name)
-        print(currency_code)
         check = False
         for cd in currency_code:
             if cd.lower() == code:
